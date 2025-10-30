@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #fff;
+  color: #222;
+  padding: 30px;
+}
+
+.cv {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+  background: #fff;
+}
+
+/* ---- Columna de la izquierda ---- */
+.left {
+  background: #efe7de;
+  padding: 26px 20px 40px;
+  border-radius: 8px;
+}
+
+.photo-wrap {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.contact-box h4 {
+  font-size: 13px;
+  background: #0f0f0f;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.contact-item {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.section {
+  margin-top: 18px;
+}
+
+.section h3 {
+  background: #fff;
+  padding: 8px 10px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.section p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.bullets {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.bullets li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.lang-list {
+  margin-top: 10px;
+}
+
+.lang {
+  font-size: 13px;
+}
+
+/* - Columna de la derecha ---- */
+.right {
+  padding: 8px 8px 32px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-weight: 600;
+  color: #666;
+  margin-top: 6px;
+}
+
+.card {
+  background: #f6f0ea;
+  padding: 14px 18px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.job-title {
+  font-weight: 700;
+}
+
+.small {
+  font-size: 13px;
+  color: #444;
+}
+
+.card ul {
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 880px) {
+  .cv {
+    grid-template-columns: 1fr;
+  }
+}
